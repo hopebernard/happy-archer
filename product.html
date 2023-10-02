@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/iconsfont.css">
+    <link rel="stylesheet" href="/css/nouislider.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/catalog.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__top">
+                    <nav class="top-header__menu">
+                        <ul class="menu-top-header__list">
+                            <li class="menu-top-header__item_catalog"><a href="" data-catalog class="menu-top-header__link menu-top-header__link_catalog fa-solid fa-chevron-down">Catalog</a></li>
+                            <li class="menu-top-header__item"><a href="" class="menu-top-header__link">About us</a></li>
+                            <li class="menu-top-header__item"><a href="" class="menu-top-header__link">Payment and delivery</a></li>
+                            <li class="menu-top-header__item"><a href="" class="menu-top-header__link">News</a></li>
+                            <li class="menu-top-header__item"><a href="" class="menu-top-header__link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <a href="" class="top-header__user fa-regular fa-user"><span class="top-header__userh">Profile</span></a>
+                    
+                    <nav hidden class="menu">
+                        <button type="button" class="menu__icon icon-menu"><span></span></button>
+                        <div class="menu__body">
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header_body body-header">
+                <div class="body-header__container _container">
+                    <a href="" class="body-header-logo fa-solid fa-bullseye">Happy <br> <span>Archer</span></a>
+                    <div class="body-header__search">
+                        <form action="#" class="search-header">
+                            <button type="submit" class="search-header__button fa-solid fa-magnifying-glass"></button>
+                            <input type="text" class="search-header__input" data-error="Error" placeholder="Search">
+                        </form>
+                    </div>
+
+                    <div class="body-header__actions actions-header">
+                        <a href="" class="actions-header__location fa-solid fa-location-dot"><span class="actions-header__locationh">London</span></a>
+                        <div class="actions-header__phones phones-header">
+                            <div data-spollers class="phones-header__items">
+                                <div class="phones-header__item">
+                                    <a href="" class="phones-header__icon fa-solid fa-phone"></a>
+                                    <a href="tel:00447975000000" class="phones-header__phone">+44-7975-000-000</a>
+                                    <button type="button" data-spoiler class="phones-header__arrow fa-solid fa-chevron-down"></button>
+                                    <ul class="phones-header__list">
+                                        <li><a href="tel:00447975000001" class="phone-header__phone">+44-7975-000-001</a></li>
+                                        <li><a href="tel:00447975000002" class="phone-header__phone">+44-7975-000-002</a></li>
+                                        <li><a href="tel:00447975000003" class="phone-header__phone">+44-7975-000-003</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="phones-header__callback">Order a call</button>
+                        </div>
+                        <a href="" class="actions-header__favorite fa-solid fa-heart"></a>
+                        <a href="" class="actions-header__cart cart-header">
+                            <a href="" class="cart-header__icon fa-solid fa-cart-shopping"><span>0</span></a>
+                            <div class="cart-header__body">
+                                <div class="cart-header__body-1">
+                                    <div class="cart-header__summ-n">0</div>
+                                    <div class="cart-header__summ-t">Euro</div>
+                                </div>
+                                <a href="" class="cart-header__link">Order</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__catalog catalog-header">
+                <div class="catalog-header__container _container">
+                    <div class="catalog-header__menu menu-catalog">
+                        <ul class="menu-catalog__list">
+                            <button type="button" class="menu-catalog__back_1 fa-solid fa-arrow-left"><span>Back</span></button>
+                            <li class="menu-catalog__item"><button data-parent="1" class="menu-catalog__link">Bows</button></li>
+                            <li class="menu-catalog__item"><button data-parent="2" class="menu-catalog__link">Arrows & Parts</button></li>
+                            <li class="menu-catalog__item"><a href="" class="menu-catalog__link">Bow Accessories</a></li>
+                            <li class="menu-catalog__item"><a href="" class="menu-catalog__link">Targets</a></li>
+                            <li class="menu-catalog__item"><a href="" class="menu-catalog__link">Archer Accessories</a></li>
+                            <li class="menu-catalog__sub-menu sub-menu-catalog">
+                                <div class="sub-menu-catalog__container _container">
+                                    <button type="button" class="menu-catalog__back_2 fa-solid fa-arrow-left"><span>Back</span></button>
+                                    <div data-submenu="1" class="sub-menu-catalog__block">
+                                        <div class="sub-menu-catalog__column">
+                                            <a href="" class="sub-menu-catalog__category">Bow category</a>
+                                            <ul class="sub-menu-catalog__list">
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Recurve bows</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Compound bows</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Longbows</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Flat bows</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Horse bows</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Kids' bows</a></li>
+                                            </ul>
+                                            <a href="" class="sub-menu-catalog__all">View all</a>
+                                        </div>
+                                        <div class="sub-menu-catalog__column">
+                                            <a href="" class="sub-menu-catalog__category">New & Hot</a>
+                                            <ul class="sub-menu-catalog__list">
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">New Arrivals</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">SITKA Merino</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Limited Edition YETI</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Monthly Specials</a></li>
+                                            </ul>
+                                            <a href="" class="sub-menu-catalog__all">View all</a>
+                                        </div>
+                                        <div class="sub-menu-catalog__column">
+                                            <a href="" class="sub-menu-catalog__category">Huntings</a>
+                                            <ul class="sub-menu-catalog__list">
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Cameras</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Hunting Apparel</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Packs & Bags</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Hunting Accessories</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Knives, Saws & Pruners</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Scent Control</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Wildlife Management</a></li>
+                                            </ul>
+                                            <a href="" class="sub-menu-catalog__all">View all</a>
+                                        </div>
+                                        <div class="sub-menu-catalog__column">
+                                            <a href="" class="sub-menu-catalog__category">Training</a>
+                                            <ul class="sub-menu-catalog__list">
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Stretch Bands & Exercisers</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Shot Training Aids</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Training & How to</a></li>
+                                            </ul>
+                                            <a href="" class="sub-menu-catalog__all">View all</a>
+                                        </div>
+                                        <div class="sub-menu-catalog__column">
+                                            <a href="" class="sub-menu-catalog__category">Tools</a>
+                                            <ul class="sub-menu-catalog__list">
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Bow Presses</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Bow Vises</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Leveling & Alignment Tools</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Bow Scales</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Draw Boards</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Bow Squares</a></li>
+                                            </ul>
+                                            <a href="" class="sub-menu-catalog__all">View all</a>
+                                        </div>
+                                    </div>
+                                    <div data-submenu="2" class="sub-menu-catalog__block">
+                                        <div class="sub-menu-catalog__column">
+                                            <a href="" class="sub-menu-catalog__category">Shafts & Fletched Arrows</a>
+                                            <ul class="sub-menu-catalog__list">
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Aluminium</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Carbon</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Wood</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Pre-made Arrows</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Custom Made Aroows</a></li>
+                                            </ul>
+                                            <a href="" class="sub-menu-catalog__all">View all</a>
+                                        </div>
+                                        <div class="sub-menu-catalog__column">
+                                            <a href="" class="sub-menu-catalog__category">Nocks</a>
+                                            <ul class="sub-menu-catalog__list">
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Push-in Nocks</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Pin Nocks</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Lighted Nocks</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Taper-fit Nocks</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Fit-over Nocks</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Nock Pins</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Nock Collars</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Nock Inserts</a></li>
+                                            </ul>
+                                            <a href="" class="sub-menu-catalog__all">View all</a>
+                                        </div>
+                                        <div class="sub-menu-catalog__column">
+                                            <a href="" class="sub-menu-catalog__category">Points</a>
+                                            <ul class="sub-menu-catalog__list">
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Glue-in Points</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Screw-in Points</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Wooden Arrow Points</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Blunts</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Broadheads</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Point Inserts</a></li>
+                                            </ul>
+                                            <a href="" class="sub-menu-catalog__all">View all</a>
+                                        </div>
+                                        <div class="sub-menu-catalog__column">
+                                            <a href="" class="sub-menu-catalog__category">Fletchings</a>
+                                            <ul class="sub-menu-catalog__list">
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Plastic Vanes</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Feathers</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Spin Vanes & Tape</a></li>
+                                                <li class="sub-menu-catalog__item"><a href="" class="sub-menu-catalog__link">Shrink Fletch</a></li>
+                                            </ul>
+                                            <a href="" class="sub-menu-catalog__all">View all</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <main class="page page_inner">
+            <div class="page__header">
+                <div class="page__container _container">
+                    <nav class="page__breadcrumbs breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="" class="breadcrumbs__link">Main <span class="fa-solid fa-angle-right"></span></a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="" class="breadcrumbs__link">Sport Bows <span class="fa-solid fa-angle-right"></span></a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__current">Wooden Bow Set</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__container _container">
+                    <div class="product__main main-product">
+                        <div class="main-product__images images-product">
+                            <div class="images-product__slider">
+                                <div class="images-product__swiper">
+                                    <div class="images-product__slide-ibg">
+                                        <img src="/img/prod.jpg" alt="Image">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="/img/prod2.jpg" alt="Image">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="/img/prod3.jpg" alt="Image">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="/img/prod4.jpg" alt="Image">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="/img/prod5.jpg" alt="Image">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="/img/prod6.jpg" alt="Image">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="/img/prod7.jpg" alt="Image">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="/img/prod8.jpg" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="images-product__thumbs thumbs-images">
+                                <div class="thumbs-images__swiper">
+                                    <div class="thumbs-images__slide-ibg">
+                                        <img src="/img/prod.jpg" alt="Image">
+                                    </div>
+                                    <div class="thumbs-images__slide-ibg">
+                                        <img src="/img/prod2.jpg" alt="Image">
+                                    </div>
+                                    <div class="thumbs-images__slide-ibg">
+                                        <img src="/img/prod3.jpg" alt="Image">
+                                    </div>
+                                    <div class="thumbs-images__slide-ibg">
+                                        <img src="/img/prod4.jpg" alt="Image">
+                                    </div>
+                                    <div class="thumbs-images__slide-ibg">
+                                        <img src="/img/prod5.jpg" alt="Image">
+                                    </div>
+                                    <div class="thumbs-images__slide-ibg">
+                                        <img src="/img/prod6.jpg" alt="Image">
+                                    </div>
+                                    <div class="thumbs-images__slide-ibg">
+                                        <img src="/img/prod7.jpg" alt="Image">
+                                    </div>
+                                    <div class="thumbs-images__slide-ibg">
+                                        <img src="/img/prod8.jpg" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="main-product__body body-product">
+                            <div class="body-product__header header-product">
+                                <div class="header-product__line">
+                                    <h1 class="header-product__title">Compound Hunting Bow</h1>
+                                    <a href="" class="header-product__link fa-solid fa-scale-balanced"></a>
+                                    <a href="" class="header-product__link fa-solid fa-heart"></a>
+                                </div>
+                                <div class="product-card__rating rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                        </div>
+                                        <div hidden class="rating__value">4.4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-product__table table-product">
+                                <div class="table-product__label">Article:</div>
+                                <div class="table-product__value">129534</div>
+                                <div class="table-product__label">Country:</div>
+                                <div class="table-product__value">USA</div>
+                                <div class="table-product__label">Number:</div>
+                                <div class="table-product__value">356</div>
+                                <div class="table-product__label">Points:</div>
+                                <div class="table-product__value">22</div>
+                            </div>
+                            <div class="body-product__options options-product">
+                                <div class="options-product__label">Metal</div>
+                                <div class="options-product__value">
+                                    <select name="form[]" class="form">
+                                        <option value="1" selected>Number 1</option>
+                                        <option value="2">Number 2</option>
+                                        <option value="3">Number 3</option>
+                                        <option value="4">Number 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="body-product__actions actions-product">
+                                <div class="actions-product__row">
+                                    <div class="actions-product__price">2 350 £</div>
+                                    <div class="actions-product__quantity quantity">
+                                        <button type="button" class="quantity__button quantity__button_plus"></button>
+                                        <div class="quantity__input">
+                                            <input autocomplete="off" type="text" name="form[]" value="1">
+                                        </div>
+                                        <button type="button" class="quantity__button quantity__button_minus"></button>
+                                    </div>
+                                </div>
+                                <div class="actions-product__buttons">
+                                    <a href="" class="actions-product__cart button"><span class="fa-solid fa-cart-shopping"></span>Add</a>
+                                    <a href="" class="actions-product__cart button button_black">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <section class="footer__text text-footer">
+                <div class="text-footer__container _container">
+                    <h1 class="text-footer__title">Archery is a way of life</h1>
+                    <div class="text-footer__text">There is something therapeutic about archery. Being outdoors in nature, having to to think through how to line up a shot, and controlling your breathing to steady your aim is immensely calming. When I first picked up a bow over a decade ago, I didn’t realize that the lessons I received wouldn’t only teach me how to shoot, but how to succeed in life. While using a primitive weapon as an analogy for life may seem odd — there is no doubt that the simple act of nocking a few arrows can teach you a thing or two about life.</div>
+                </div>
+            </section>
+            <div class="footer__container _container">
+                <div class="footer__body body-footer">
+                    <div class="body-footer__row">
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="693,max" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">Information<span class="fa-solid fa-chevron-down _infooter"></span></button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Archery equipment</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Blog</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">About us</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Payment & Delievery</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Our policy</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="693,max" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">Support<span class="fa-solid fa-chevron-down _infooter"></span></button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Contact us</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Join the community</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Find more help</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="693,max" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">Additional<span class="fa-solid fa-chevron-down _infooter"></span></button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Gifts</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Certificates</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Group trainings</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Archery community</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="693,max" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">For you<span class="fa-solid fa-chevron-down _infooter"></span></button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Best for you</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Profile</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Order history</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">My favorites</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Subscribe</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-footer__row">
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="693,max" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">Contacts<span class="fa-solid fa-chevron-down _infooter"></span></button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="tel:00447975000000" class="menu-footer__link">+44-7975-000-000</a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        <p>Mon - Fri</p>
+                                                        <p>7am - 7pm</p>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        <p>London,</p>
+                                                        <p>Croydon,</p>
+                                                        <p>Dingwall Rd 5, 772</p>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="mailto:info.archer@gmail.com" class="menu-footer__link">info.archer@gmail.com</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <ul class="social-footer">
+                                            <li class="social-footer__item">
+                                                <a href="" class="social-footer__link">
+                                                    <img src="/img/fb.png" alt="Icon">
+                                                </a>
+                                            </li>
+                                            <li class="social-footer__item">
+                                                <a href="" class="social-footer__link">
+                                                    <img src="/img/wa.png" alt="Icon">
+                                                </a>
+                                            </li>
+                                            <li class="social-footer__item">
+                                                <a href="" class="social-footer__link">
+                                                    <img src="/img/v.png" alt="Icon">
+                                                </a>
+                                            </li>
+                                            <li class="social-footer__item">
+                                                <a href="" class="social-footer__link">
+                                                    <img src="/img/t.png" alt="Icon">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="693,max" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">Policies<span class="fa-solid fa-chevron-down _infooter"></span></button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">Our policy</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="693,max" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">Garanties<span class="fa-solid fa-chevron-down _infooter"></span></button>
+                                    <div class="spoiler-item-footer__body">
+                                        <div class="spoiler-item-footer__text">
+                                            Are you not happy<br> with your order?<br>
+                                            Free return during 2 weeks<br> after the purchase<br> according <a href="">our policies</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="693,max" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">Subscribe<span class="fa-solid fa-chevron-down _infooter"></span></button>
+                                    <form action="#" class="spoiler-item-footer__body footer-subscribe">
+                                        <label for="subscribe-input" class="footer-subscribe__label">Subscribe right now! Get the best offers first!</label>
+                                        <div class="footer-subscribe__line">
+                                            <input id="subscribe-input" autocomplete="off" type="text" name="form[]" data-error="Error" data-required="emmail" placeholder="example@gmail.com" class="footer-subscribe__input">
+                                            <button type="submit" class="footer-subscribe__button fa-solid fa-angle-right"></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-footer__bottom">
+                        <div class="body-footer__rules">
+                            Communications between you and our store are protected by our Privacy Policy but not by attorney-client privilege or as work product.
+                        </div>
+                        <div class="body-footer__copy">
+                            Online-store "Happy Archer" ©.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/js/nouislider.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

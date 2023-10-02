@@ -1,0 +1,315 @@
+.page_inner {
+    padding-top: 2rem;
+}
+.page__header{
+    margin-bottom: 0rem;
+}
+.catalog {
+    padding-bottom: calc(30px + 70 * (100vw / 1280));
+}
+.title{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+.breadcrumbs {
+    white-space: nowrap;
+    overflow: auto;
+    height: 2rem;
+}
+.breadcrumbs__list {
+    display: flex;
+}
+.breadcrumbs__link {
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    color: rgb(40, 40, 40);
+}
+.breadcrumbs__current {
+    color: goldenrod;
+}
+.fa-angle-right{
+    color: rgb(40, 40, 40);
+    font-size: 1rem;
+    margin: 0 0.6rem;
+}
+.catalog__body{
+    display: grid;
+    gap: 2rem;
+}
+@media(min-width: 992px) {
+    .catalog__body{
+        grid-template-columns: 22.5rem 1fr;
+    }
+}
+@media(max-width: 350px) {
+    .catalog__body{
+        display: block;
+    }
+}
+.catalog__control {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.3rem;
+}
+.control {
+    border: 1px solid rgba(4, 4, 4, 0.3);
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+}
+@media(max-width: 350px) {
+    .control {
+        margin-top: 0.8rem;
+    }
+}
+.control__title{
+    font-size: 0.8rem;
+}
+.catalog__products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin-bottom: calc(20px + 20 * (100vw / 1280));
+}
+.catalog__footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+@media(max-width: 992px) {
+    .catalog__footer {
+        flex-direction: column;
+    }
+}
+.product-card{
+    position: relative;
+}
+.product-card__sale{
+    position: absolute;
+    top: 1.2rem;
+    left: 0;
+    color: #fff;
+    background-color: goldenrod;
+    padding: 0.4rem 1.5rem;
+    z-index:10;
+    pointer-events: none;
+}
+.button_border{
+    background-color: #fff;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    box-shadow: none;
+    justify-content: center;
+}
+.pagging {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+.pagging__arrow {
+    color: goldenrod;
+    background-color: transparent;
+}
+.pagging__arrow:disabled {
+    color: rgba(0, 0, 0, 0.12);
+}
+.pagging__arrow_left {
+    transform: rotate(180deg);
+}
+.pagging__arrow.fa-angle-right {
+    font-size: 1.4rem;
+}
+.pagging__list {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.pagging__link {
+    width: 2.1rem;
+    height: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #141414;
+}
+.pagging__link._active{
+    background-color: goldenrod;
+    color: white;
+}
+.pagging__link:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+
+
+
+/*=============================
+===============================
+===============================*/
+
+
+
+.catalog__filter {
+    background-color: #fefefe;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    min-width: 0;
+}
+.filter-catalog__title {
+    width: 100%;
+    color: white;
+    background-color: #141414;
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding: 1.2rem;
+}
+@media(max-width: 350px) {
+    .catalog__filter{
+        box-shadow: none;
+    }
+}
+.price-filter {
+    padding: 1.2rem 1.8rem;
+}
+.price-filter__title{
+    width: 100%;
+    font-size: 1.4rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+.fa-chevron-down._infilter{
+    display: none;
+    transition: all 0.3s ease 0s;
+}
+@media(max-width: 992px) {
+    .fa-chevron-down._infilter{
+        display: flex;
+    }
+}
+.price-filter__title._active span{
+    transform: rotate(180deg);
+    transition: all 0.3s ease 0s;
+}
+.price-filter__title span{
+    font-size: 1.2rem;
+    color: goldenrod;
+}
+.price-filter__body{
+    max-width: 100%;
+    overflow: hidden;
+}
+.filter-price__slider {
+    margin: 1.5rem 0;
+}
+.firter-price__inputs {
+    margin-top: 0.5rem;
+    display: flex;
+    
+}
+.filter-price__label {
+    flex: 1 1 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    display: flex;
+    padding: 0.5rem;
+}
+.filter-price__text {
+    font-size: 1rem;
+}
+.filter-price__input {
+    max-width: fit-content;
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+
+.item-filter-catalog__title {
+    background-color: #141414;
+    color: white;
+    width: 100%;
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    padding: 1.2rem 1.8rem;
+}
+.item-filter-catalog__title span{
+    font-size: 1.2rem;
+    color: goldenrod;
+}
+.item-filter-catalog__title._active span{
+    transform: rotate(180deg);
+    transition: all 0.3s ease 0s;
+}
+.item-filter-catalog__body {
+    padding: 0.5rem 1.8rem;
+}
+.checkbox {
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+.checkbok:last-child{
+    margin-bottom: 0;
+}
+.checkbox_input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.checkbox_input:hover +
+.checkbox__label:before {
+    box-shadow: 0 0 5px #141414;
+}
+.checkbox_input:checked +
+.checkbox__label:after {
+    transform: scale(1);
+}
+.checkbox__label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    gap: 0.7rem;
+}
+.checkbox__label::before{
+    content: '';
+    align-self: flex-start;
+    flex: 0 0 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid goldenrod;
+    border-radius: 2px;
+}
+.checkbox__label::after{
+    content: '';
+    transition: all 0.3s ease 0s;
+    transform: scale(0);
+    position: absolute;
+    width: 0.9rem;
+    height: 0.9rem;
+    top: 0.15rem;
+    left: 0.15rem;
+    background-color: goldenrod;
+    border-radius: 2px;
+}
+.checkbox__text {
+    font-size: 1.1rem;
+    position: relative;
+}
+.checkbox__text small{
+    position: absolute;
+    color: goldenrod;
+    font-size: 0.8rem;
+    top: 5px;
+    right: -1.6rem;
+}
