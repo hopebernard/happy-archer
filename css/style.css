@@ -941,7 +941,7 @@ button.menu-catalog__back_2{
     
 }
 .main-block {
-    background: url('.img/bgc2.jpg') center / cover no-repeat;
+    background: url('bgc2.jpg') center / cover no-repeat;
     padding: 40px 0px 60px 0px;
 }
 .main-block__body {
