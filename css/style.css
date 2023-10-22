@@ -941,7 +941,7 @@ button.menu-catalog__back_2{
     
 }
 .main-block {
-    background: url('/portfolio/img/bgc2.jpg') center / cover no-repeat;
+    background: url('../img/bgc2.jpg') center / cover no-repeat;
     padding: 40px 0px 60px 0px;
 }
 .main-block__body {
@@ -1505,7 +1505,7 @@ button.menu-catalog__back_2{
 
 
 .products-new {
-    background: url('/portfolio/img/bgc3.jpg') center / cover no-repeat;
+    background: url('../img/bgc3.jpg') center / cover no-repeat;
     padding-top: calc(15px + 30 * (100vw / 1280));
     padding-bottom: calc(15px + 15 * (100vw / 1280));
 }
@@ -1596,7 +1596,7 @@ button.menu-catalog__back_2{
 
 
 .products-pro {
-    background: url('/portfolio/img/bgc4.jpg') center / cover no-repeat;
+    background: url('../img/bgc4.jpg') center / cover no-repeat;
     padding-top: calc(15px + 30 * (100vw / 1280));
     padding-bottom: calc(15px + 15 * (100vw / 1280));
 }
@@ -1738,7 +1738,7 @@ img {
     background-color: #141414;
 }
 .footer__text {
-    background: url('/portfolio/img/bgc21.jpg') center / cover no-repeat;
+    background: url('../img/bgc21.jpg') center / cover no-repeat;
     padding: 2rem 0;
 }
 .text-footer__title {
